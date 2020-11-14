@@ -30,7 +30,7 @@ if [ ! -f nym-mixnode_linux_x86_64 ] || [ "$(./nym-mixnode_linux_x86_64 --versio
           else echo " nym-mixnode.service is inactive or not existing. Downloading new binaries ..." && pwd
     		curl -L -s "$URL" -o "nym-mixnode_linux_x86_64" --cacert /etc/ssl/certs/ca-certificates.crt && echo "Fetching the latest version" && pwd
 	   # Make it executable
-   chmod +x ./nym-mixnode_linux_x86_64 && chown nym:nym ./nym-mixnode_linux_x86_64
+   chmod +x ./nym-mixnode_linux_x86_64 && chown nym1:nym1 ./nym-mixnode_linux_x86_64
    fi
 else
    echo "You have the latest version of Nym-mixnode $VERSION"
